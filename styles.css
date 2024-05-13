@@ -1,0 +1,823 @@
+body {
+    color: #1F1F1F;
+    background-color: rgb(241, 235, 227);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+#about-me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5em;
+}
+
+.abouttext {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.round-image {
+  border: 10px solid #333;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#skillspage {
+  margin: 3em;
+  border-radius: 20px;
+  padding: 3em;
+  background-color: rgb(65, 96, 67);
+  color: rgb(241, 235, 227);
+}
+
+.skillexperience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skill {
+  grid-column: 1 / span 1;  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.skill-description h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-description p {
+  margin: 0;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.experience {
+  background-color: white;
+  margin: 4em;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Add shadow with 8px blur */
+}
+
+#experience h1 {
+  padding-left: 3em;
+}
+
+.experience h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.experience h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin: 0;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 30vh;
+  padding: 3em;
+}
+.gallery-item {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+.overlay-content {
+  text-align: center;
+}
+.overlay-content a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projectcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project {
+  margin-bottom: 40px;
+}
+.project img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.project p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+.bento-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    gap: 10px; /* Gap between grid items */
+    width: calc(100% - 40px); /* Adjusted width to account for padding */
+    height: 95vh; /* Set container height to 95% of viewport height */
+    padding: 20px; /* Padding around the container */
+    overflow: hidden; /* Hide any content that overflows the container */
+  }
+  
+  .box {
+    background-color:rgb(241, 235, 227);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+  }
+
+  #blank {
+    background-color: rgb(241, 235, 227);
+    color: #333;
+  }
+
+  #blank1 {
+    background-color: rgb(241, 235, 227);
+    color: #333;
+    justify-content: right;
+  }
+
+  #blank1 h2 {
+    font-size: 1em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 1000;
+  }
+
+  #blank2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns items to the start of the container (left side) */
+    justify-content: space-between; /* Distributes items evenly in the container */
+  }
+
+  #blank3 {
+    font-size: x-large;
+    background-color: rgb(241, 235, 227);
+    font-family: "Cedarville Cursive", cursive;
+    grid-column: span 2;
+  }
+  
+
+  #box1 {
+    grid-column: 2 / span 2; /* Starts at column 2 and spans 2 columns */
+    position: relative; /* Position the box relative to the parent */
+    background-image: url('assets/images/colour-picture.jpg'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire box with the background image */
+    background-position: center; /* Center the background image */
+    color: rgb(241, 235, 227);
+    padding: 20px; /* Padding around the content */
+    font-size: 24px; /* Font size for the brand title */
+    line-height: 1.5; /* Line height for readability */
+    text-align: center; /* Center align the text */
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+
+  #box1 h1 {
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 200;
+  }
+  
+  #box1::before {
+    border-radius: 50px;
+    z-index: 100;
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element absolute within the box */
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black color */
+  }
+
+  #box1:hover {
+    color: rgb(244, 226, 179);
+    background-image: url('assets/images/colour-picture2.jpg');
+  }
+  
+  #box2 {
+    align-items: center;
+    justify-content: center;
+    grid-column: 4; /* Starts at column 4 */
+    padding: 20px; /* Padding around the content */
+    background-color: rgb(105, 52, 52);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+
+  #box2:hover {
+    background-color: rgb(73, 36, 36);
+  }
+  
+  .instagram-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .instagram-logo:hover {
+    width: 90px;
+  }
+  
+  .instagram-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    
+  }
+  
+  #box3 {
+    background-color: rgb(241, 235, 227);
+    padding:0;
+    grid-column: 6 / span 1; /* Starts at column 3 and spans 2 columns */
+    grid-row: 1; /* Starts at row 1 and spans 2 rows */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+    grid-gap: 7.5px;
+    
+  }
+  
+  .grid-item {
+    background-size: cover; /* Cover the entire area with the background image */
+    transition: transform 0.3s; /* Add a transition effect for smoother hover */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+  
+  #item1 {
+    background-image: url('assets/images/bike.jpg'); /* Add your image URL here */
+  }
+  
+  #item2 {
+    background-image: url('assets/images/colour-picture.jpg'); /* Add your image URL here */
+  }
+  
+  #item3 {
+    background-image: url('assets/images/orange.jpg'); /* Add your image URL here */
+  }
+  
+  #item4 {
+    background-image: url('assets/images/colour-picture2.jpg'); /* Add your image URL here */
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05); /* Enlarge the grid item on hover */
+  }
+  
+  
+  #box4 {
+    grid-column: 2; /* Starts at column 2 */
+    background-color: rgb(65, 96, 67);
+    padding: 5px;
+    justify-content:left;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+
+  #box4 h3 {
+    font-size: 14px;
+    margin-top: 5px; /* Adjust as needed */
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+
+  #box4 p {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  #box4 ul {
+    list-style:none;
+  }
+
+  
+  #box5 {
+    border: 5px solid #333;
+    grid-column: 3 / span 2; /* Starts at column 3 and spans 2 columns */
+    grid-row: 2 / span 2; /* Starts at row 2 and spans 2 rows */
+    background-color: rgb(244, 226, 179); /* Light background color */
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 0; /* Allow the box to shrink to fit content */
+    overflow: scroll; /* Ensure content inside the box is scrollable */
+    position: relative; /* Ensure the pseudo-element is positioned relative to this box */
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6)); /* Gradient fade effect */
+    background-repeat: no-repeat;
+    background-size: 100% 100px; /* Height of the gradient fade */
+    background-position: bottom; /* Position the gradient at the bottom */
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+  
+  #box5 h2 {
+    margin-bottom: 40px; /* Add margin below heading */
+  }
+
+  #box5 p {
+    padding: 50px;
+  }
+  .btn5 {
+    width: 50%;
+    color:#1F1F1F;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Add transition effect */
+    margin-bottom: 50px;
+  }
+  
+  .btn5:hover {
+    color: #fff; /* White text color */
+    background-color: #333; /* Darker blue background color on hover */
+  }
+  
+  #box6 {
+    grid-column: 5 / span 2; /* Starts at column 5 and spans 2 columns */
+    background-color: rgb(66, 104, 133); /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Padding around the content */
+    font-size: 12px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+  }  
+
+  .contact-info img {
+    bottom: 0;
+    justify-self: end;
+    margin-right: 20px;
+  }
+  
+  #box7 {
+    grid-row: 3 / span 2; /* Starts at row 3 and spans 2 rows */
+    background-color: rgb(244, 226, 179);
+    border: 5px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+  }
+
+  #box7 ol {
+    font-size: 14px;
+    margin-top:0;
+    list-style-type: upper-roman;
+    line-height: 2;
+  }
+
+  #box7 a {
+    text-decoration: none;
+    color:#737373;
+  }
+  
+  #box8 {
+    grid-column: 2 / span 1; /* Starts at column 1 and spans 2 columns */
+    grid-row: 3 / span 1; /* Starts at row 3 and spans 2 rows */
+    position: relative; /* Position the box relative for absolute positioning of hover content */
+    background-image: url('assets/images/bike.jpg'); /* Add your image URL here */
+    background-size: cover; /* Scale the background image to fit within the box */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+  
+  .hover-content {
+    position: absolute; /* Position the hover content absolutely within the box */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    opacity: 0; /* Initially hide the hover content */
+    transition: opacity 0.3s; /* Add a transition effect for smoother appearance */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    border-radius: 10px;
+  }
+  
+  #box8:hover .hover-content {
+    opacity: 1; /* Show the hover content on hover */
+  }
+  
+  .hover-content h2 {
+    font-size: 14px;
+    color: #fff; /* Light text color */
+    text-align: center; /* Center align the text */
+  }
+  .hover-content p {
+    padding: 5px;
+    font-size: 12px;
+    color: #fff; /* Light text color */
+    text-align: center; /* Center align the text */
+  }
+
+  #box8 .hover-content a {
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(244, 226, 179)
+}
+
+  
+  #box9 {
+    color: white;
+    font-size: 12px;
+    grid-column: 3 / span 3; /* Starts at column 3 and spans 3 columns */
+    grid-row: 4; /* Starts at row 4 */
+    background-color: rgb(65, 96, 67);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+
+  }
+
+  #box9 img {
+    height: 50px;
+    justify-self: center;
+  }
+
+  #box10 {
+    grid-column: 2; /* Starts at column 2 */
+    grid-row: 4;
+    position: relative; /* Position the box relative for absolute positioning of hover content */
+    background-image: url('assets/images/orange.jpg'); /* Add your image URL here */
+    background-size: cover; /* Scale the background image to fit within the box */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow with 8px blur */
+  }
+
+  #box10:hover .hover-content {
+    opacity: 1; /* Show the hover content on hover */
+  }
+
+  #box10 .hover-content a {
+
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(244, 226, 179)
+  }
+  
+footer {
+    text-align: center;
+}
+
+
+
+/* For tablets (landscape) */
+@media (max-width: 1024px) {
+  .bento-box {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(5, 1fr); /* 6 rows */
+    height: 150vh; /* Reduce container height */
+  }
+
+  #box1 {
+    grid-column: 1 / span 3; /* Expand box 1 to span 3 columns */
+    grid-row: 1;
+    text-align: center; /* Center align the text */
+  }
+
+  #box2 {
+    grid-column: 4 / span 1; /* Adjust position of box 2 */
+    grid-row: 1;
+  }
+
+  #box3 {
+    grid-column: 4; /* Adjust position of box 3 */
+    grid-row: 2;
+  }
+
+  #box4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #box5 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  #box5 p {
+    padding: 20px;
+  }
+
+  #box6 {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+  }
+
+  #box7 {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+  }
+
+  #box8 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #box9 {
+    grid-column: 1 / span 4; /* Adjust position of box 10 */
+    grid-row: 5;
+  }
+
+  #box10 {
+    grid-column: 1 / span 1; /* Adjust position of box 9 */
+    font-size: 10px; /* Decrease font size */
+  }
+
+  #blank1 {
+    display:none;
+  }
+
+  #blank1 h2 {
+    font-size: 1em;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-weight: 1000;
+  }
+
+  #blank2 {
+    display:none;
+  }
+
+  #blank3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillexperience {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);  
+    padding: 0;
+
+  }
+  .bento-box {
+    grid-template-columns: repeat(3, 1fr); /* 4 columns */
+    grid-template-rows: repeat(5, 1fr); /* 6 rows */
+    height: 150vh; /* Reduce container height */
+  }
+
+  #box1 {
+    grid-column: 1 / span 2; /* Expand box 1 to span 3 columns */
+    grid-row: 1;
+    text-align: center; /* Center align the text */
+  }
+
+  #box2 {
+    grid-column: 3 / span 1; /* Adjust position of box 2 */
+    grid-row: 1;
+  }
+
+  #box3 {
+    grid-column: 3; /* Adjust position of box 3 */
+    grid-row: 2;
+  }
+
+  #box4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #box5 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  #box5 p {
+    padding: 10px;
+  }
+
+  #box6 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+
+  #box7 {
+    grid-column: 3;
+    grid-row: 4 / span 2;
+  }
+
+  #box8 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #box9 {
+    grid-column: 1 / span 2; /* Adjust position of box 10 */
+    grid-row: 5;
+  }
+
+  #box10 {
+    grid-column: 1; /* Adjust position of box 9 */
+    grid-row: 3;
+    font-size: 10px; /* Decrease font size */
+  }
+
+  #blank3 {
+    grid-column: 1 / span 3;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 650px) {
+    .bento-box {
+      grid-template-columns: repeat(2, 1fr); /* 4 columns */
+      grid-template-rows: repeat(11, 1fr); /* 6 rows */
+      height: 300vh; /* Reduce container height */
+    }
+  
+    #box1 {
+      grid-column: 1 / span 2; /* Expand box 1 to span 3 columns */
+      grid-row: 1;
+    }
+  
+    #box2 {
+      grid-column: 2 / span 1; /* Adjust position of box 2 */
+      grid-row: 5;
+    }
+  
+    #box3 {
+      grid-column: 1 / span 2; /* Adjust position of box 3 */
+      grid-row: 6;
+      min-height: 400px;
+    }
+  
+    #box4 {
+      grid-column: 2;
+      grid-row: 8;
+    }
+  
+    #box5 {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 2;
+    }
+  
+    #box5 p {
+      padding: 10px;
+    }
+  
+    #box6 {
+      grid-column: 1 / span 2;
+      grid-row: 10;
+    }
+  
+    #box7 {
+      grid-column: 1 / span 1;
+      grid-row: 7 / span 2;
+    }
+  
+    #box8 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+
+    #box9 {
+      grid-column: 1 / span 2; /* Adjust position of box 10 */
+      grid-row: 9;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    #box9 img {
+      height: 50px;
+      justify-self: center;
+    }
+  
+    #box10 {
+      grid-column: 2; /* Adjust position of box 9 */
+      grid-row: 2;
+    }
+    
+    #blank1 {
+      grid-column: 2;
+      grid-row: 7;
+      display:block;
+    }
+    #blank2 {
+      display: block;
+      grid-column: 1 ;
+      grid-row: 5;
+      text-align: center;
+      justify-content: center;
+      padding:0;
+    }
+    #blank3 {
+      grid-column: 1 / span 2;
+      grid-row: 11;
+      justify-content: center;
+      text-align: center;
+    }
+}
+
+}
